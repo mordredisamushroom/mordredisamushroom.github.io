@@ -9,9 +9,6 @@
 </head>
 <body>
     <iframe id="iframeAudio" src="music.mp3" allow="autoplay" loop=1 id="audio" style="display:none"></iframe>
-    <audio autoplay id="playAudio">
-        <source src="music.mp3">
-    </audio>
 <!-- partial:index.partial.html -->
     <div class="star1"></div>
     <div class="star2"></div>
@@ -28,16 +25,7 @@
         <p id = "first" style="color: aliceblue">  </p>
         <p id = "part-one" style="color: aliceblue; margin-top: 50px">  </p>
     </div>
-    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script>
-        var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
-        if(!isChrome){
-            $('#iframeAudio').remove()
-            }
-        else{
-            $('#playAudio').remove() //just to make sure that it will not have 2x audio in the background 
-        }
-      
             var i = 0;
             var instruction = '接下来请你用双击屏幕来控制页面, 一定要慢慢点，等每行load完再点，不然有bug : )';
             var speed = 70;

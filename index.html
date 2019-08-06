@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./style.css"><script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 </head>
 <body>
+  <div id="fake_canvas" style="width: 100%; height: 100%"  >
     <iframe id="iframeAudio" src="music.mp3" allow="autoplay" loop=1 id="audio" style="display:none"></iframe>
 <!-- partial:index.partial.html -->
     <div class="star1"></div>
@@ -231,7 +232,7 @@
                 })();
             }
             function begin(){
-                document.body.onclick = function(){
+                document.getElementById("fake_canvas").onclick = function(){
                         if (!firstOut) {
                             fadeOut("first");
                         }
@@ -254,5 +255,6 @@
             }
             
         </script>
+  </div>
 </body>
 </html>

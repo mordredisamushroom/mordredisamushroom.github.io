@@ -9,7 +9,7 @@
 </head>
 <body>
     <iframe src="music.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
-    <audio autoplay>
+    <audio autoplay loop>
         <source src="music.mp3" type="audio/mpeg">
     </audio>
 <!-- partial:index.partial.html -->
@@ -51,8 +51,8 @@
                 "即使最终会被吃掉，蘑菇们还是又开心又幸福",
                 "有一天他在浇水的时候发现了一件非常奇怪的事情：",
                 "园子里竟然长了一个圆型的蘑菇！",
-                "是不是忘了说，冯唐之所以被称为宇宙间第一蘑菇种植选手",
-                "是因为他会种奇形怪状的蘑菇：星型的，方形的，桃子型的，恐龙型的...",
+                "是不是忘了说，冯梦之所以被称为宇宙间第一蘑菇种植选手",
+                "是因为他会种奇形怪状的蘑菇：星型的，方型的，桃子型的，恐龙型的...",
                 "唯独没有种出来圆型的蘑菇",
                 "所以这次他非常激动竟然种出来了圆型的蘑菇！",
                 "圆嘛，你懂的，世间最美的形状",
@@ -240,7 +240,7 @@
                             document.getElementById("part-one").innerHTML = "";
                         }
                         if (index == 142){
-                            speed = 120;
+                            speed = 150;
                         }
                         if (hasLineBreak) {
                             writeText(partOne[index]);
